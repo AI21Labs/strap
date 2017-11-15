@@ -324,5 +324,9 @@ if [ -f "$HOME/.Brewfile" ]; then
   logk
 fi
 
+# Show hidden files
+log "Configuring to show hidden files"
+defaults write com.apple.finder AppleShowAllFiles YES
+
 STRAP_SUCCESS="1"
 log "Your system is now Strap'd!"
